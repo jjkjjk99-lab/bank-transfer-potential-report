@@ -95,6 +95,9 @@
   th{background:var(--blue);color:#fff;font-weight:600}
   tr:nth-child(even) td{background:#fafbfc}
   td.hl{font-weight:800;color:var(--wx-d)}
+  table.grid9 th:first-child{background:var(--sub);font-size:12px}
+  table.grid9 td:first-child{background:var(--blue);color:#fff;font-weight:700}
+  table.grid9 td{font-size:15px;font-weight:700;padding:14px 8px}
   ul.clean{margin:12px 0;padding-left:4px;list-style:none}
   ul.clean li{padding:7px 0 7px 26px;position:relative;color:#2d3540}
   ul.clean li::before{content:"";position:absolute;left:6px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--wx)}
@@ -151,7 +154,7 @@
   <nav class="toc">
     <h3>目 录</h3>
     <ol>
-      <li><a href="#c1">核心结论与三档商业收益测算总览</a></li>
+      <li><a href="#c1">核心结论与九宫格商业收益测算总览</a></li>
       <li><a href="#c2">全行业银行转账入金大盘与交易结构拆解</a></li>
       <li><a href="#c3">五层比例漏斗与触点结构</a></li>
       <li><a href="#c4">双引擎测算：存量替代与拉新增量</a></li>
@@ -163,39 +166,34 @@
   <section class="card">
     <h2 class="sec">引言</h2>
     <p>银行转账入金是中国金融体系的底层动脉。据中国人民银行披露，2024 年银行卡转账业务金额达 791.71 万亿元（<a href="https://ima.qq.com/wiki/?shareId=e07577c358d307e40ce892e1abc8d78a75a77c61d6c8611e81c4bbe1d4bf3bd3" target="_blank">中国支付清算发展报告</a>），这一庞大的资金流每天都在理财申购、信贷还款、保费缴纳等场景中反复穿行。与此同时，金融机构的服务触点正加速向小程序生态迁移——工商银行、吉林银行等已相继在小程序内落地财富管理与账户服务能力（<a href="https://www.toutiao.com/article/7537992405493023286" target="_blank">《中国金融》工银微金融案例</a>），机构对轻量化、免下载入金通道的诉求日益清晰。</p>
-    <p>那么，当一项标准化的小程序银行转账能力向金融行业开放时，它究竟能撬动多大的商业空间？本报告不采用自上而下的粗略拍脑袋，而是以"正推法"为主线：从最外层的银行转账入金大盘出发，按资金用途拆分理财、信贷、缴费、保险等结构性板块，逐层施加触点过滤、剔除代扣、手动转账可切盘等比例约束，最终落到可被小程序转账能力承接的有效盘子，并按万分之二费率折算商业收入。</p>
+    <p>那么，当一项标准化的小程序银行转账能力向金融行业开放时，它究竟能撬动多大的商业空间？本报告不采用自上而下的粗略拍脑袋，而是以"正推法"为主线：从最外层的银行转账入金大盘出发，收口至互联网/线上渠道生态玩家，逐层施加剔除代扣、小程序化比例过滤等约束，最终落到可被小程序转账能力承接的有效盘子，并按万分之二费率折算商业收入。</p>
     <p>报告覆盖五个递进模块：三档收入测算总览、全行业入金大盘与交易结构、五层比例漏斗、双引擎测算模型，以及关键不确定性与推进路径。核心结论先行——整盘商业收入预计落在约 1.42 亿至 2.75 亿元区间，其量级与结构将在后续章节中逐层拆解与验证。</p>
   </section>
 
   <!-- 第1章 -->
   <section class="card" id="c1">
-    <h2 class="sec"><span class="no">1</span>核心结论与三档商业收益测算总览</h2>
+    <h2 class="sec"><span class="no">1</span>核心结论与九宫格商业收益测算总览</h2>
 
     <div class="verdict-lead">
-      小程序银行转账能力若向金融行业开放，按 <b>万2</b> 费率正推，预计商业收入区间约为 <b>3.0亿 ~ 4.5亿元</b>。该区间对应 B 端接入率的悲观（10%）、中性（30%）、乐观（50%）三档情景——地板由存量生态的确定性替代锁定，上行由新生态的拉新增量弹性打开。
+      小程序银行转账能力若向金融行业开放，按 <b>万2</b> 费率正推，在「B端接入率 × 小程序化比例」双轴敏感性下，预计商业收入区间约为 <b>2.18亿 ~ 10.91亿元</b>。地板由存量生态的确定性替代锁定，上行由小程序化渗透与拉新增量弹性共同打开。
     </div>
 
-    <div class="tiers">
-      <div class="tier pes"><span class="tag">悲观 · 接入10%</span>
-        <div class="lab">可触达GMV 14975亿</div><div class="amt">3.0<span style="font-size:18px">亿</span></div><div class="unit">商业收入</div></div>
-      <div class="tier mid"><span class="tag">中性 · 接入30%</span>
-        <div class="lab">可触达GMV 18675亿</div><div class="amt">3.7<span style="font-size:18px">亿</span></div><div class="unit">商业收入</div></div>
-      <div class="tier opt"><span class="tag">乐观 · 接入50%</span>
-        <div class="lab">可触达GMV 22375亿</div><div class="amt">4.5<span style="font-size:18px">亿</span></div><div class="unit">商业收入</div></div>
-    </div>
-
-    <table>
-      <tr><th>情景</th><th>B端接入率</th><th>引擎A 存量替代</th><th>引擎B 拉新增量</th><th>可触达GMV</th><th>商业收入</th></tr>
-      <tr><td>悲观</td><td>10%</td><td>13125亿</td><td>1850亿</td><td>14975亿</td><td class="hl">约3.0亿</td></tr>
-      <tr><td>中性</td><td>30%</td><td>13125亿</td><td>5550亿</td><td>18675亿</td><td class="hl">约3.7亿</td></tr>
-      <tr><td>乐观</td><td>50%</td><td>13125亿</td><td>9250亿</td><td>22375亿</td><td class="hl">约4.5亿</td></tr>
+    <h3 class="sub">九宫格：双轴敏感性测算（B端接入率 × 小程序化比例）</h3>
+    <table class="grid9">
+      <tr><th rowspan="2">B端接入率 ↓<br>小程序化 →</th><th colspan="3">小程序化比例（已有生态玩家中走小程序的比例）</th></tr>
+      <tr><th>悲观 10%</th><th>中性 30%</th><th>乐观 50%</th></tr>
+      <tr><th>悲观 10%</th><td>2.18亿</td><td>5.80亿</td><td>9.43亿</td></tr>
+      <tr><th>中性 30%</th><td>2.92亿</td><td class="hl">6.54亿</td><td>10.17亿</td></tr>
+      <tr><th>乐观 50%</th><td>3.66亿</td><td>7.28亿</td><td class="hl">10.91亿</td></tr>
     </table>
-    <p>两条清晰规律：<strong>引擎A（存量替代）恒定为 13125亿 GMV、约2.63亿收入（已计入75%A端接入折损），不随B端接入率波动，构成收入地板</strong>；<strong>引擎B（拉新增量）随 B 端接入率线性弹性</strong>，在 10%/30%/50% 三档分别贡献约 3700万/1.11亿/1.85亿收入。</p>
+    <p style="font-size:13px;color:var(--sub)">对角线：悲观×悲观=2.18亿 / 中性×中性=<strong>6.54亿</strong> / 乐观×乐观=<strong>10.91亿</strong>。引擎A（存量替代）贡献固定地板，引擎B（拉新增量）随B端接入率弹性上行；小程序化比例则同步抬升两台引擎的可触达盘子。</p>
+
+    <p>两条规律：<strong>引擎A地板随小程序化比例抬升</strong>（10%→50%对应地板1.81亿→9.06亿）；<strong>引擎B随B端接入率线性弹性</strong>，在 10%/30%/50% 三档分别贡献约 0.37亿/1.11亿/1.85亿。</p>
 
     <h3 class="sub">测算骨架：三句话讲清这个数怎么来的</h3>
     <ul class="clean">
       <li><strong>分母（大盘）</strong>：起点是全行业银行转账入金大盘，2024年银行卡转账 <strong>791.71万亿元</strong>（<a href="https://ima.qq.com/wiki/?shareId=e07577c358d307e40ce892e1abc8d78a75a77c61d6c8611e81c4bbe1d4bf3bd3" target="_blank">央行</a>）是天花板起点。</li>
-      <li><strong>折损（漏斗）</strong>：经五层比例漏斗逐级过滤——触点过滤、剔除代扣、识别手动转账可切盘，才落到可被产品能力触达的 GMV。</li>
+      <li><strong>折损（漏斗）</strong>：经逐级过滤——收口互联网生态、剔除代扣（80%）、乘小程序化比例(10/30/50%)与A端接入率(80%)，才落到可被产品能力触达的 GMV。</li>
       <li><strong>双引擎（口径分离）</strong>：可触达 GMV 由存量替代（已有生态玩家，C端替代≈100%）+ 拉新增量（新建生态玩家，受B端接入率约束）两台引擎贡献。</li>
     </ul>
 
@@ -203,13 +201,13 @@
 
     <h3 class="sub">核心洞察</h3>
     <div class="insight">
-      <div class="ins"><div class="k">公式极简</div><div class="v">年收入 = 可触达GMV × 万2，复杂度全收敛在"可触达GMV"一个变量。</div></div>
-      <div class="ins"><div class="k">一地板、一上行</div><div class="v">引擎A是确定性地板（约2.63亿，已计入75%A端接入折损）；引擎B是弹性上行（0~1.85亿）。下有保底、上有空间。</div></div>
-      <div class="ins"><div class="k">最大变量=B端接入率</div><div class="v">三档差异全部来自引擎B，核心杠杆是有多少商户愿意接入并新建小程序生态。</div></div>
+      <div class="ins"><div class="k">双轴敏感性</div><div class="v">收入=可触达GMV×万2；可触达GMV由「B端接入率 × 小程序化比例」双轴共同决定，形成3×3九宫格。</div></div>
+      <div class="ins"><div class="k">两台引擎各受一轴驱动</div><div class="v">引擎A（存量替代）随小程序化比例抬升地板；引擎B（拉新增量）随B端接入率弹性上行。下有保底、上有空间。</div></div>
+      <div class="ins"><div class="k">最大变量=双轴爬坡</div><div class="v">小程序化渗透（多少主动转账已走小程序）与B端接入率（多少新玩家愿建生态）共同决定天花板。</div></div>
     </div>
     <p>值得补充的是，转账/入金作为一种支付方式的扩容本身对交易转化有正向价值。Stripe 实测显示，扩充本地化支付方式可带来约 <strong>+7.4%</strong> 的转化提升（<a href="https://stripe.com/blog/testing-the-conversion-impact-of-50-plus-global-payment-methods" target="_blank">Stripe</a>），侧面印证新增支付路径对增量 GMV 的撬动逻辑。</p>
 
-    <div class="quote">口径声明：本报告为"量级估算"而非"精确预测"。代扣占比、订单vs常驻结构、各层入金流量等关键比例均基于公开参考锚推算，具体数值需以内部真实数据进一步校准。三档区间应理解为决策参考的合理区间。</div>
+    <div class="quote">口径声明：本报告为"量级估算"而非"精确预测"。代扣剔除率、小程序化比例、手动占比、A端接入率等关键参数均基于公开参考锚推算，具体数值需以内部真实数据进一步校准。九宫格各格应理解为决策参考的合理区间。</div>
   </section>
 
   <!-- 第2章 -->
@@ -224,20 +222,20 @@
     <table>
       <tr><th style="text-align:left">类别</th><th>关键规模锚点（2024）</th><th>切入定位</th></tr>
       <tr><td style="text-align:left"><strong>理财入金类</strong></td><td>银行理财存续28.52万亿/上半年募集33.68万亿；公募32.83万亿(非货基Q4申购4.85万亿份)；券商结算资金2.58万亿(+46.6%)</td><td class="hl">核心可切盘</td></tr>
-      <tr><td style="text-align:left"><strong>信贷还款类</strong></td><td>信用卡应偿8.71万亿；消费贷余额21.01万亿</td><td>多为代扣·剔除</td></tr>
+      <tr><td style="text-align:left"><strong>信贷还款类</strong></td><td>信用卡应偿8.71万亿；消费贷余额21.01万亿</td><td>多为银行卡代扣</td></tr>
       <tr><td style="text-align:left"><strong>缴费类</strong></td><td>保费5.7万亿(人身险4.26万亿)；银保新单趸缴3702亿/期缴3587亿</td><td>趸缴计入·期缴剔除</td></tr>
     </table>
     <p>数据来源：<a href="https://finance.sina.com.cn/roll/2024-07-31/doc-incfzpyz8982121.shtml" target="_blank">理财登记中心</a>、<a href="https://new.qq.com/rain/a/20250120A09DIV00" target="_blank">中基协</a>、<a href="https://www.sac.net.cn/hysj/jysj/202503/t20250327_67549.html" target="_blank">证券业协会</a>、<a href="https://www.ce.cn/xwzx/gnsz/gdxw/202502/02/t20250202_39281691.shtml" target="_blank">金融监管总局</a>、<a href="https://finance.sina.com.cn/jjxw/2025-02-19/doc-inekzkfz4701714.shtml" target="_blank">央行信用卡</a>、<a href="https://k.sina.cn/article_2311077472_89c03e6002002agry.html" target="_blank">证券日报银保新单</a>。</p>
     <p><strong>保险的关键区分</strong>：趸缴（一次性缴费）产品单笔金额大、多由客户主动银行转账完成，应计入可切盘；月缴/年缴等定期小额保费通常绑定代扣，排除在手动转账口径外。2024年银保渠道趸缴件均约13万元、期缴约4万元，趸缴件均是期缴的3倍以上，正是"大额、宜走主动转账"的部分。</p>
 
     <h3 class="sub">2.3 交易结构：代扣 vs 主动转账</h3>
-    <p>代扣（一次授权、系统自动划款）与主动转账（每笔手动发起）对本报告意义完全不同——只有主动转账场景才可能被支付体验优化所影响。信贷还款场景高度依赖代扣，据行业惯例推算约90%为代扣、约10%为主动转账（推断值，非官方统计）。</p>
+    <p>代扣（一次授权、系统自动划款）与主动转账（每笔手动发起）对本报告意义完全不同——只有主动转账场景才是小程序行业能力体验优化的核心目标。信贷还款场景高度依赖代扣，据行业惯例推算约80%为代扣、约20%为主动转账（推断值，非官方统计）。</p>
 
     <div class="gap">
       <div class="gt">⚠ 三项数据缺口（诚实标注，绝不以估算冒充公开口径）</div>
       <ul>
-        <li><strong>代扣占比</strong>：央行未单独披露代扣/委托扣款精确占比，"信贷约90%代扣"系行业惯例推断。</li>
-        <li><strong>触点模式</strong>：各细分"订单模式 vs 常驻账号模式"占比无公开数据，以假设参数处理。</li>
+        <li><strong>代扣占比</strong>：央行未单独披露代扣/委托扣款精确占比，"信贷约80%代扣"系行业惯例推断。</li>
+        <li><strong>小程序化比例</strong>：各细分场景"主动转账中有多少已走小程序"无公开精确数据，以10/30/50%三档假设处理。</li>
         <li><strong>入金流量口径</strong>：理财/保险规模多为存续/存量口径，各细分独立年度流量未单独披露，需按申购/募集/新单等指标推算。</li>
       </ul>
     </div>
@@ -252,27 +250,24 @@
 
     <div class="funnel">
       <div class="flayer fl1">① 全行业银行转账入金大盘<small>银行卡转账 791.71 万亿元</small></div>
-      <div class="farrow">▼ 触点过滤 × 小程序触点率（订单≈100% / 常驻类 70:30）</div>
-      <div class="flayer fl2">② 有触点盘</div>
-      <div class="farrow">▼ 剔除代扣（无痛点、切不动）</div>
-      <div class="flayer fl3">③ 手动转账可切盘</div>
-      <div class="farrow">▼ 双引擎：B端接入率 × C端替代率(≈100%)</div>
+      <div class="farrow">▼ 理财、信贷、缴费渠道子集</div>
+      <div class="flayer fl2">② 金融渠道生态玩家主动转账盘</div>
+      <div class="farrow">▼ 剔除代扣（80%代扣，留20%主动）</div>
+      <div class="flayer fl3">③ 手动转账可切盘（base）</div>
+      <div class="farrow">▼ 双轴：小程序化比例(10/30/50%) × B端接入率(10/30/50%) × A端接入率(80%) × C端替代(≈100%)</div>
       <div class="flayer fl4">④ 可触达 GMV</div>
       <div class="farrow">▼ × 万2 费率</div>
-      <div class="flayer fl5">⑤ 整盘年收入</div>
+      <div class="flayer fl5">⑤ 整盘年收入（九宫格）</div>
     </div>
 
-    <h3 class="sub">3.1 触点过滤：资金必须"路过小程序"才有被调用的机会</h3>
-    <ul class="clean">
-      <li><strong>订单模式（触点率≈100%）</strong>：非货基/净值型/申购/趸缴保险/信贷主动还款，须完成下单、确认金额份额等强制动作，天然要求用户来到小程序。</li>
-      <li><strong>常驻账号模式（触点率按70/30推）</strong>：活期/货基类随存随取，约70%用户仍先进小程序发起、约30%直接打开银行APP转账（无触点）。</li>
-    </ul>
-    <p>该70/30有公开行为数据佐证：CFCA《2024中国数字银行调查报告》显示个人手机银行用户88%、某头部小程序渠道45%、近四成用户同时使用手机银行和小程序（<a href="https://finance.sina.cn/2024-11-25/detail-incxhqmn4919254.d.html" target="_blank">CFCA调查</a>、<a href="https://www.sohu.com/a/829060691_114984" target="_blank">渠道重合度</a>）。即便银行APP高度普及，仍有可观比例用户通过小程序发起，70/30是稳健设定。（注：45%为用户渗透率口径，与70%交易路由率口径不同，仅作方向性佐证。）</p>
+    <h3 class="sub">3.1 小程序化比例：主动转账中有多少已走小程序</h3>
+    <p>引入一个统一的<strong>「小程序化比例」</strong>——即各场景主动转账盘中，有多少比例的资金流已经在小程序生态内发生（可被本能力触达）。该比例作为九宫格的横轴，取悲观10% / 中性30% / 乐观50%三档。</p>
+    <p>方向性佐证：CFCA《2024中国数字银行调查报告》显示个人手机银行用户88%、某头部小程序渠道用户45%、近四成用户同时使用手机银行和小程序（<a href="https://finance.sina.cn/2024-11-25/detail-incxhqmn4919254.d.html" target="_blank">CFCA调查</a>、<a href="https://www.sohu.com/a/829060691_114984" target="_blank">渠道重合度</a>），说明小程序作为金融入金触点的渗透仍在早期，10%~50%区间是稳健假设。</p>
 
     <h3 class="sub">3.2 交易类型过滤：剔代扣、锁定手动转账</h3>
     <p>代扣已签约自动扣、无痛点、切不动，剔除；手动转账（手填卡号金额、体验差）是主战场。痛点有充分佐证：Baymard 2024 研究显示平均购物车放弃率高达 <strong>70.19%</strong>，复杂结账流程是主因（<a href="https://launchmystore.io/blog/how-to-reduce-shopping-cart-abandonment-rate" target="_blank">Baymard</a>）；Mastercard 调查发现 2024 年超 5600 万消费者因支付流程繁琐放弃购买（<a href="https://www.fynax.io/en/frustration-at-the-check-out-what-online-retailers-can-learn-from-their-customers-shopping-mistakes" target="_blank">Mastercard</a>）。</p>
 
-    <div class="quote">可触达（手动转账可切盘）= 场景规模 × 触点率 × (1 − 代扣占比)</div>
+    <div class="quote">可触达（手动转账可切盘）= base × 小程序化比例 × A端接入率(80%) × C端替代(≈100%)</div>
 
     <h3 class="sub">3.3 C端替代率≈100%</h3>
     <p>手动转账一旦有"小程序内发起并预填"的更优体验，用户无理由保留旧方式，替代趋近全切。Stripe 实验显示增加匹配支付方式转化+7.4%、收入+12%、本地化支付成功率+22%（<a href="https://stripe.com/blog/testing-the-conversion-impact-of-50-plus-global-payment-methods" target="_blank">Stripe</a>）。注意≈100%仅作用于漏斗收敛后的窄口径子集，而非整个大盘。</p>
@@ -287,14 +282,13 @@
     <div class="engines">
       <div class="engine a">
         <div class="eh"><span class="dot"></span>引擎A · 存量替代</div>
-        <div style="font-size:13px;color:var(--sub)">仅已建小程序生态玩家（互联网信贷/保险/理财等），含其自然新增</div>
+        <div style="font-size:13px;color:var(--sub)">小程序生态的渠道玩家，含其自然新增</div>
         <ul>
-          <li>互联网信贷主动还款：万亿还款盘 ×(1-90%代扣)=1050亿</li>
-          <li>互联网保险趸缴首单：950亿</li>
-          <li>常驻账号类理财手动转账盘（活期/货基高频申赎年流量×70%触点）：15500亿</li>
-          <li>触点率≈100%/70% × C端替代≈100%</li>
-          <li><strong>× A端接入率75%（为体验付费+改造的决策折损）</strong></li>
-          <li><strong>小计 17500亿×75%≈13125亿 → 收入约2.63亿（固定地板）</strong></li>
+          <li>信贷主动还款：2.5万亿年还款 ×(1-80%代扣)= <strong>5000亿</strong></li>
+          <li>保险趸缴（非期缴渠道）：<strong>700亿</strong></li>
+          <li>理财手动转账盘：86万亿年流量 × 12.5%手动占比〔参考行业某头部理财平台银行卡转入占比10-15%〕= <strong>107500亿</strong></li>
+          <li><strong>base合计 ≈ 113200亿</strong></li>
+          <li>× 小程序化比例(10/30/50%) × A端接入率<strong>80%</strong> × C端替代≈100%</li>
         </ul>
       </div>
       <div class="engine b">
@@ -304,22 +298,27 @@
           <li>新增用户池≈1亿人〔自下而上估：区域行5000万+券商基金2000万+保险1800万+其他1200万，占移动支付大盘约10%〕</li>
           <li>人均年入金≈3.7万元〔保守假设：取灰度单笔金额、每人一年仅入金一笔，实际更高〕</li>
           <li>转化比例50%（首次入金转化）</li>
-          <li><strong>满额18500亿 × 接入率10/30/50%弹性</strong></li>
+          <li><strong>满额18500亿 × B端接入率10/30/50%弹性</strong></li>
         </ul>
       </div>
     </div>
 
+    <p style="font-size:13px;color:var(--sub)">引擎A与引擎B构成九宫格的两台引擎：引擎A地板随<strong>小程序化比例</strong>抬升（10%→50%），引擎B随<strong>B端接入率</strong>弹性上行。两者口径互斥防重复计数。详见第1章九宫格。</p>
+
+    <h3 class="sub">测算明细表（以中性小程序化30%档为例）</h3>
+    <p style="font-size:13px;color:var(--sub)">取小程序化比例中性档30%展开三档B端接入的中间数字，便于看清每个数怎么算。完整9格敏感性见上方九宫格表。</p>
     <table>
-      <tr><th>情景</th><th>引擎A GMV</th><th>引擎B GMV</th><th>可触达GMV</th><th>引擎A收入</th><th>引擎B收入</th><th>商业收入合计</th></tr>
-      <tr><td>悲观(10%)</td><td>13125亿</td><td>1850亿</td><td>14975亿</td><td>2.63亿</td><td>3700万</td><td class="hl">约3.0亿</td></tr>
-      <tr><td>中性(30%)</td><td>13125亿</td><td>5550亿</td><td>18675亿</td><td>2.63亿</td><td>11100万</td><td class="hl">约3.7亿</td></tr>
-      <tr><td>乐观(50%)</td><td>13125亿</td><td>9250亿</td><td>22375亿</td><td>2.63亿</td><td>18500万</td><td class="hl">约4.5亿</td></tr>
+      <tr><th>情景</th><th>B端接入率</th><th>引擎A GMV</th><th>引擎B GMV</th><th>可触达GMV</th><th>引擎A收入</th><th>引擎B收入</th><th>商业收入合计</th></tr>
+      <tr><td>悲观</td><td>10%</td><td>27168亿</td><td>1850亿</td><td>29018亿</td><td>5.43亿</td><td>3700万</td><td class="hl">约5.80亿</td></tr>
+      <tr><td>中性</td><td>30%</td><td>27168亿</td><td>5550亿</td><td>32718亿</td><td>5.43亿</td><td>11100万</td><td class="hl">约6.54亿</td></tr>
+      <tr><td>乐观</td><td>50%</td><td>27168亿</td><td>9250亿</td><td>36418亿</td><td>5.43亿</td><td>18500万</td><td class="hl">约7.28亿</td></tr>
     </table>
-    <p style="font-size:13px;color:var(--sub)">口径说明：① 常驻账号类理财（活期/货基）按"高频申赎年流量（数十万亿级）×70%触点×手动转账占比"纳入基准；② 引擎A整体再乘 <strong>A端接入率75%</strong>——已有生态玩家接入本能力仍需付费与改造，会权衡"体验增益 vs 新增成本"后决策，故非100%接入（显著高于引擎B新玩家、但不为满额）。触点率、手动占比、A端接入率、最终盘子取值均为量级估算，待内部真实交易数据校准。</p>
+    <p style="font-size:13px;color:var(--sub)">算式说明：引擎A = base 113200亿 × 小程序化30% × A端接入80% = 27168亿，再 × 万2 = 5.43亿；引擎B = 满额18500亿 × B端接入率(10/30/50%)，再 × 万2。</p>
+    <p style="font-size:13px;color:var(--sub)">口径说明：① 代扣剔除率统一<strong>80%</strong>（留20%主动还款/缴费）；② 理财手动占比12.5%参考行业某头部理财平台银行卡转入占比10-15%；③ A端接入率<strong>80%</strong>——已有生态玩家接入本能力仍需付费与改造，会权衡"体验增益 vs 新增成本"后决策，故非100%接入。所有比例均为量级估算，待内部真实交易数据校准。</p>
 
     <h3 class="sub">典型案例（半匿名）</h3>
-    <p><strong>某互联网信贷产品</strong>：年还款约万亿量级，约90%走自动代扣，主动还款仅约10%即千亿级，且为纯小程序生态——还款天然在小程序内发起并预填，订单模式触点率≈100%、C端替代≈100%，千亿主动盘可近乎无损转化为可切盘。<strong>某互联网保险平台</strong>同理，其趸缴首单主动支付盘直接进入引擎A自然盘子，新用户增长归A不进B，正是防重复计数规则的现实映照。</p>
-    <p style="font-size:13px;color:var(--sub)">所有推断值（大盘量级、代扣占比、常驻账号盘取值、潜在用户池、人均年入金取值）均已显式标注，与灰度实测锚点（C端替代≈100%）明确区分；其中人均年入金以灰度单笔金额3.7万保守代替（假设一年一笔），便于后续用真实数据回测校准。</p>
+    <p><strong>某信贷产品</strong>：年还款约万亿量级，约80%走自动代扣，主动还款约20%即千亿级，且为纯小程序生态——还款天然在小程序内发起并预填，C端替代≈100%，千亿主动盘可近乎无损转化为可切盘。<strong>某保险平台</strong>同理，其趸缴首单主动支付盘直接进入引擎A自然盘子，新用户增长归A不进B，正是防重复计数规则的现实映照。</p>
+    <p style="font-size:13px;color:var(--sub)">所有推断值（大盘量级、代扣占比、小程序化比例、理财手动占比、潜在用户池、人均年入金取值）均已显式标注，与灰度实测锚点（C端替代≈100%）明确区分；其中人均年入金以灰度单笔金额3.7万保守代替（假设一年一笔），便于后续用真实数据回测校准。</p>
   </section>
 
   <!-- 第5章 -->
@@ -330,21 +329,21 @@
     <p>全模型最大不确定性集中在硬拍参数 B端接入率——本质取决于<strong>有多少行业客户愿意为这能力去新建或深耕小程序生态</strong>。机构自有 App/H5 是存量阵地无理由迁移，但小程序是增量新场景，丝滑的银行转账能力恰是吸引它们前来做拉新的"钩子"。工商银行深圳分行"工银微金融"小程序 2024 年末累计服务用户超2亿、月活超1600万，居银行业首位（<a href="https://www.toutiao.com/article/7537992405493023286" target="_blank">《中国金融》</a>）；吉林银行"吉行微服务"将转介流程由18步压缩到10步（<a href="https://m.chinanews.com/wap/detail/cht/zw/332066.shtml" target="_blank">中国新闻网</a>）。机构确有动力把小程序当增量获客场景，拉来的新用户逐年沉淀为存量，形成滚动复利。</p>
 
     <h3 class="sub">5.2 数据缺口对测算精度的影响</h3>
-    <p>代扣占比、订单vs常驻占比、各细分入金流量分布均为缺口，用公开行业锚（<a href="https://www.jiemian.com/article/12278960.html" target="_blank">艾瑞</a>、<a href="https://www.bbtnews.com.cn/2025/0507/556145.shtml" target="_blank">微众年报</a>）做量级推算，精度停留"量级"层面，需内部交易数据或付费报告二次校准。</p>
+    <p>代扣占比、小程序化比例、手动占比、各细分入金流量分布均为缺口，用公开行业锚（<a href="https://www.jiemian.com/article/12278960.html" target="_blank">艾瑞</a>、<a href="https://www.bbtnews.com.cn/2025/0507/556145.shtml" target="_blank">微众年报</a>）做量级推算，精度停留"量级"层面，需内部交易数据或付费报告二次校准。</p>
 
     <h3 class="sub">5.3 商业化推进路径建议</h3>
     <table>
       <tr><th>阶段</th><th>对应接入率</th><th>策略</th></tr>
-      <tr><td>短期</td><td>约10%</td><td style="text-align:left">存量替代、立刻兑现——从已有小程序生态玩家切入，几乎无教育成本</td></tr>
-      <tr><td>中期</td><td>约30%</td><td style="text-align:left">钩子撬动新玩家——以标杆示范推动机构从零建生态</td></tr>
-      <tr><td>长期</td><td>约50%</td><td style="text-align:left">生态成熟、滚动复利——新用户沉淀为存量，形成网络效应</td></tr>
+      <tr><td>短期</td><td>B端约10%</td><td style="text-align:left">存量替代、立刻兑现——从已有小程序生态玩家切入，几乎无教育成本</td></tr>
+      <tr><td>中期</td><td>B端约30%</td><td style="text-align:left">钩子撬动新玩家——以标杆示范推动机构从零建生态</td></tr>
+      <tr><td>长期</td><td>B端约50%</td><td style="text-align:left">生态成熟、滚动复利——新用户沉淀为存量，形成网络效应</td></tr>
     </table>
   </section>
 
   <!-- 结论 -->
   <section class="card">
     <h2 class="sec">结论</h2>
-    <p>在万分之二费率下，整盘商业收入预计落在约 <strong>3.0亿元</strong>（接入10%）、<strong>3.7亿元</strong>（30%）到 <strong>4.5亿元</strong>（50%）的三档区间。四点关键发现：其一，收入呈"地板+上行"双引擎结构，引擎A提供约2.63亿刚性地板（已计入75%A端接入折损）、引擎B随接入率弹性上行，口径互斥防重复计数；其二，最外层分母坚实（2024银行卡转账791.71万亿）；其三，C端替代动力已有旁证（Stripe转化提升、Baymard放弃率）；其四，最大不确定性来自B端接入率。</p>
+    <p>在万分之二费率下，整盘商业收入在「B端接入率 × 小程序化比例」双轴敏感性下，落在约 <strong>2.18亿元</strong>（悲观×悲观）到 <strong>10.91亿元</strong>（乐观×乐观）的九宫格区间，对角线中性档约 <strong>6.54亿元</strong>。四点关键发现：其一，收入呈"双轴驱动"结构——引擎A随小程序化比例抬升地板、引擎B随B端接入率弹性上行，口径互斥防重复计数；其二，最外层分母坚实（2024银行卡转账791.71万亿）；其三，C端替代动力已有旁证（Stripe转化提升、Baymard放弃率）；其四，最大不确定性来自双轴爬坡——小程序化渗透与B端接入率共同决定天花板。</p>
     <p>本测算多处依赖公开数据的结构性拆分，部分板块存在诚实标注的数据缺口，上述量级应视为方向性判断，最终精度有待内部真实交易数据校准。建议采取<strong>"先存量替代夯实地板、再以钩子撬动增量"</strong>的分阶段路径推进。</p>
   </section>
 
